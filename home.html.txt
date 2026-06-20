@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ScholarPrep</title>
+</head>
+<body>
+
+<h1>ScholarPrep</h1>
+
+<p>Learn Smarter. Score Higher.</p>
+
+<h2>Subjects</h2>
+
+<ul>
+<li>Mathematics</li>
+<li>English Language</li>
+<li>Data Processing</li>
+</ul>
+
+<button>Start Learning</button>
+
+</body>
+</html>
