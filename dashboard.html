@@ -22,15 +22,28 @@
 
 <div class="hero">
     <h1>Student Dashboard</h1>
-    <p>Track your learning progress</p>
+
+    <div class="card">
+        <h3>Mathematics Result</h3>
+        <p id="score">Loading...</p>
+    </div>
 </div>
 
-<div class="card">
-    <h3>Subjects</h3>
-    <p>Mathematics</p>
-    <p>English</p>
-    <p>Data Processing</p>
-</div>
+<script>
+// get saved score
+let score = localStorage.getItem("mathScore");
+
+// show result
+if(score === null){
+    document.getElementById("score").innerHTML = "No quiz taken yet";
+}
+else if(score == 1){
+    document.getElementById("score").innerHTML = "Score: 100% 🎉";
+}
+else{
+    document.getElementById("score").innerHTML = "Score: 0% ❌";
+}
+</script>
 
 </body>
 </html>

@@ -33,11 +33,17 @@
 
 <script>
 function checkAnswer(answer){
+    let score = 0;
+
     if(answer === 8){
+        score = 1;
         document.getElementById("result").innerHTML = "Correct! 🎉";
     } else {
+        score = 0;
         document.getElementById("result").innerHTML = "Wrong Answer ❌";
     }
+
+    localStorage.setItem("mathScore", score);
 }
 </script>
 
