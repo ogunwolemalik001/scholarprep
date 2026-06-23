@@ -21,27 +21,26 @@
 </header>
 
 <div class="hero">
+
     <h1>Student Dashboard</h1>
 
     <div class="card">
-        <h3>Mathematics Result</h3>
-        <p id="score">Loading...</p>
+        <h3>Mathematics Score</h3>
+        <p id="score"></p>
     </div>
+
 </div>
 
 <script>
-// get saved score
 let score = localStorage.getItem("mathScore");
 
-// show result
 if(score === null){
-    document.getElementById("score").innerHTML = "No quiz taken yet";
-}
-else if(score == 1){
-    document.getElementById("score").innerHTML = "Score: 100% 🎉";
+    document.getElementById("score").innerHTML =
+        "No quiz taken yet";
 }
 else{
-    document.getElementById("score").innerHTML = "Score: 0% ❌";
+    document.getElementById("score").innerHTML =
+        "Score: " + score + "%";
 }
 </script>
 
